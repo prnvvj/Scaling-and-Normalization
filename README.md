@@ -74,3 +74,19 @@ Softmax scaling is based on the logistic function:
 Where y is the scaled value and x is the input value.
 - The logistic function transforms the original range of 
 [-∞,∞] to [0,1] and also has a linear part on the transform
+
+![image](https://user-images.githubusercontent.com/58979984/114998938-08e37a80-9ebf-11eb-9eb2-9a26324f5ca2.png)
+
+### Min-Max Scaler in scikit-learn
+
+![image](https://user-images.githubusercontent.com/58979984/114999065-257fb280-9ebf-11eb-9a42-a616bea63dd4.png)
+
+### Data Normalization
+- Applying a function to each data point z in the data: yi = f(zi)
+- Unlike scaling, not only the data is distorted, but the shape or distribution of the data changes as well.
+- The point of normalization is to change your observations so that they can be described as a normal distribution.
+- In general, you'll only want to normalize your data if you're going to be using a machine learning or statistics technique that assumes your data is normally distributed.
+- Or before using any technique containing “Gaussian” in its name.
+
+![image](https://user-images.githubusercontent.com/58979984/114999254-4e07ac80-9ebf-11eb-8660-22cda552ce4d.png)
+
