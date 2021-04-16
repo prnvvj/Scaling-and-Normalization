@@ -129,4 +129,4 @@ straight line. We superimpose a larger collection of transformations on a semi-l
 
 
 [@Nikita](https://github.com/nikitasaxena992)
-[@Pranav](https://deiteo.science.blog/)
+<br/> [@Pranav](https://deiteo.science.blog/) </br>
