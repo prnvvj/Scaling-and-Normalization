@@ -128,10 +128,6 @@ straight line. We superimpose a larger collection of transformations on a semi-l
 ![image](https://user-images.githubusercontent.com/58979984/115012650-b78eb780-9ecd-11eb-912d-d4706ba6fe7d.png)
 
 
-[@Nikita](https://github.com/nikitasaxena992)
-<br/> [@Pranav](https://deiteo.science.blog/) </br>
-
-
 <p align="right">
 https://github.com/nikitasaxena992
 <br/> https://deiteo.science.blog/ </br>
