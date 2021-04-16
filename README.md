@@ -132,7 +132,7 @@ straight line. We superimpose a larger collection of transformations on a semi-l
 <br/> [@Pranav](https://deiteo.science.blog/) </br>
 
 
-<p align="center">
+<p align="right">
 [@Nikita](https://github.com/nikitasaxena992)
 <br/> [@Pranav](https://deiteo.science.blog/) </br>
 </p>
