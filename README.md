@@ -1,4 +1,6 @@
 # Scaling and Normalization
+Many machine learning algorithms expect data to be scaled consistently.
+There are popular methods that you should consider when scaling your data for Machine Learning.
 
 ## Topics:
 1. Scaling of Data
