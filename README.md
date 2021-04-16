@@ -33,17 +33,21 @@ One way of doing this is:
 ### Dealing with Out of Range values
 - After range scaling, all variables should be in the range of [0,1].
 - Out-of-range values, however, have values like -0.2 or 1.1 which can cause unwanted behavior.
+
 **Solution 1: Ignore that the range has been exceeded.**
 - Most modeling tools have (at least) some capacity to handle numbers outside the scaling range.
 - Important question to ask: Does this affect the quality of the model? 
+
 **Solution 2: Exclude the out of range instances.**
 - One problem is that reducing the number of instances reduces the confidence that the sample represents the population.
 - Another problem: Introduction of bias. Out-of-range values may occur with a certain pattern and ignoring these instances removes samples according to a pattern introducing distortion to the sample.
+
 **Solution 3: Clip the out of range values**
 - If the value is greater than 1, assign 1 to it. If less than 0, assign 0.
 - This approach assumes that out-of-range values are somehow equivalent with range limit values.
 - Therefore, the information content on the limits is distorted by projecting multiple values into a single value. 
 - This also introduces some bias.
+
 **Solution 4: Making room for out of range values**
 - The linear scaling transform provides an undistorted normalization but suffers from out-of-range values.
 - Therefore, we should modify it to somehow include also values that are out of range.
@@ -51,6 +55,7 @@ One way of doing this is:
 - The solution is to reserve some part of the range for the out-of-range values.
 - Reserved amount of space depends on the confidence level of the sample: 
 e.g. - 98% confidence linear part is [0.01, 0.99]
+
 **Squashing the out of range values**
 - Now the problem reduces to fitting the out-of-range values into the space left for them.
 - The greater the difference between a value and the range limit, the less likely any such value is found. 
