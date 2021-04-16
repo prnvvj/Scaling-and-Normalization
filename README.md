@@ -19,6 +19,6 @@ One way of doing this is:
 ### Linear Scaling Transform
 - First task in this scaling is to determine the minimum and maximum values of variables.
 - Then applying the transform:
-          (x - min{x1, xN}) / (max{x1, xN} - min{x1, xN}) 
+</b> (x - min{x1, xN}) / (max{x1, xN} - min{x1, xN}) </b>
 - This introduces no distortion to the variable distribution.
 - Has a one-to-one relationship between the original and scaled values
