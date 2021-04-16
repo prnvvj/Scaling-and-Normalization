@@ -57,6 +57,7 @@ One way of doing this is:
 e.g. - 98% confidence linear part is [0.01, 0.99]
 
 * *Squashing the out of range values
+* 
 - Now the problem reduces to fitting the out-of-range values into the space left for them.
 - The greater the difference between a value and the range limit, the less likely any such value is found. 
 - Therefore, the transformation should be such that as the distance to the range grows, the smaller the increase towards one or decrease towards zero.
