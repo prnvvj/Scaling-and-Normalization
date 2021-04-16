@@ -34,21 +34,21 @@ One way of doing this is:
 - After range scaling, all variables should be in the range of [0,1].
 - Out-of-range values, however, have values like -0.2 or 1.1 which can cause unwanted behavior.
 
-* *Solution 1: Ignore that the range has been exceeded.
+```Solution 1: Ignore that the range has been exceeded.```
 - Most modeling tools have (at least) some capacity to handle numbers outside the scaling range.
 - Important question to ask: Does this affect the quality of the model? 
 
-* *Solution 2: Exclude the out of range instances.
+```Solution 2: Exclude the out of range instances.```
 - One problem is that reducing the number of instances reduces the confidence that the sample represents the population.
 - Another problem: Introduction of bias. Out-of-range values may occur with a certain pattern and ignoring these instances removes samples according to a pattern introducing distortion to the sample.
 
-* *Solution 3: Clip the out of range values
+```Solution 3: Clip the out of range values```
 - If the value is greater than 1, assign 1 to it. If less than 0, assign 0.
 - This approach assumes that out-of-range values are somehow equivalent with range limit values.
 - Therefore, the information content on the limits is distorted by projecting multiple values into a single value. 
 - This also introduces some bias.
 
-* *Solution 4: Making room for out of range values
+```Solution 4: Making room for out of range values```
 - The linear scaling transform provides an undistorted normalization but suffers from out-of-range values.
 - Therefore, we should modify it to somehow include also values that are out of range.
 - Most of the population is inside the range so for these values the normalization should be linear.
@@ -56,8 +56,7 @@ One way of doing this is:
 - Reserved amount of space depends on the confidence level of the sample: 
 e.g. - 98% confidence linear part is [0.01, 0.99]
 
-* *Squashing the out of range values
-* 
+```Squashing the out of range values```
 - Now the problem reduces to fitting the out-of-range values into the space left for them.
 - The greater the difference between a value and the range limit, the less likely any such value is found. 
 - Therefore, the transformation should be such that as the distance to the range grows, the smaller the increase towards one or decrease towards zero.
@@ -66,7 +65,7 @@ e.g. - 98% confidence linear part is [0.01, 0.99]
 Its difficult to carry out the scaling in pieces depending on the nature of the data point.
 We can do all of the above steps using one function called **Softmax scaling**
 
-* *Softmax Scaling –
+```Softmax Scaling –```
 - The extent of the linear part can be controlled by one parameter.
 - The space assigned for out-of-range values can be controlled by the level of uncertainty in the sample.
 - Non identical values have always different normalized values. 
