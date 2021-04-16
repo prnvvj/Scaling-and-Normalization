@@ -118,13 +118,11 @@ as ƛ turns to be 0
 ### Box-Cox Transformation
 Notice with this definition of that x = 1 always maps to the point = 0 for all values of λ. To see how
 the transformation works, look at the examples in Figure
-
 ![image](https://user-images.githubusercontent.com/58979984/115011388-32ef6980-9ecc-11eb-88b6-130c968f9d37.png)
 
 In the top row, the choice λ = 1 simply shifts x to the value x−1, which is a straight line. In the bottom row (on
 a semi-logarithmic scale), the choice λ = 0 corresponds to a logarithmic transformation, which is now a
 straight line. We superimpose a larger collection of transformations on a semi-logarithmic scale in Figure 2.
-
 ![image](https://user-images.githubusercontent.com/58979984/115012650-b78eb780-9ecd-11eb-912d-d4706ba6fe7d.png)
 
 
