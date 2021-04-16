@@ -73,4 +73,4 @@ Softmax scaling is based on the logistic function:
 <br/> y = 1 / (1 + e-x) <br/>
 Where y is the scaled value and x is the input value.
 - The logistic function transforms the original range of 
-[-∞,∞] to [0,1] and also has a linear part on the transform.
+[-∞,∞] to [0,1] and also has a linear part on the transform
