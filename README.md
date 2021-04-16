@@ -90,3 +90,35 @@ Where y is the scaled value and x is the input value.
 
 ![image](https://user-images.githubusercontent.com/58979984/114999254-4e07ac80-9ebf-11eb-8660-22cda552ce4d.png)
 
+### Data Standardization
+- Also called z-scores.
+- The terms normalization and standardization are sometimes used interchangeably.
+- Standardization transforms data to have a mean of zero and a standard deviation of 1.
+- Done by subtracting the mean and dividing by the standard deviation for each data point.
+![image](https://user-images.githubusercontent.com/58979984/115010138-b445fc80-9eca-11eb-8b75-d75569af60a0.png)
+![image](https://user-images.githubusercontent.com/58979984/115010230-c9229000-9eca-11eb-82af-b2edb74740e5.png)
+
+### Log Transformation
+- The log transformation can be used to make highly skewed distributions less skewed.
+- This can be valuable both for making patterns in the data more interpretable and for helping to meet the assumptions of inferential statistics.
+- Figure shows an example of how a log transformation can make patterns more visible. Both graphs plot the brain weight of animals as a function of their body weight. The raw weights are shown in the left panel; the log-transformed weights are plotted in the right panel.
+
+![image](https://user-images.githubusercontent.com/58979984/115010352-f1aa8a00-9eca-11eb-9fa3-016e0c012df9.png)
+
+### Box-Cox Transformation
+The Box-Cox transformation of the variable x is also indexed by λ, and is defined as
+![image](https://user-images.githubusercontent.com/58979984/115011144-e572fc80-9ecb-11eb-9b6f-002e8f2a9164.png)
+- Box-Cox transformations cannot handle negative values.
+- One way to deal with this is by adding the minimum data point value to add the data points. 
+- We want to use the same lambda generated from the training set of box cox transformation in the test set.
+- Another way to write this equation:
+![image](https://user-images.githubusercontent.com/58979984/115011231-063b5200-9ecc-11eb-8e01-6efcba328037.png)
+as ƛ turns to be 0
+
+### Box-Cox Transformation
+Notice with this definition of that x = 1 always maps to the point = 0 for all values of λ. To see how
+the transformation works, look at the examples in Figure
+![image](https://user-images.githubusercontent.com/58979984/115011388-32ef6980-9ecc-11eb-88b6-130c968f9d37.png)
+
+
+
